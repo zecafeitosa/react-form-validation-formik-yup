@@ -1,9 +1,19 @@
+body {
+  background-color: #282c34;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
 
+.App-header {
+  margin-bottom: 60px;
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 16vmin;
+  margin-top: 30px;
   pointer-events: none;
 }
 
@@ -13,21 +23,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +30,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  width: 100%;
+  display: block;
+  max-width: 500px;
+  padding: 0 15px;
+  text-align: left;
+  margin: 40px auto 0;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-top: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input {
+  outline: 0;
+  width: 100%;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  background-color: #4b505a;
+  border: 1px solid #1c2027;
+}
+
+.inputError {
+  font-size: 14px;
+  font-style: italic;
+  color: #fd5050;
+  display: block;
+}
+
+button[type="submit"] {
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: 500;
+  border: 0;
+  padding: 14px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 12px;
 }
